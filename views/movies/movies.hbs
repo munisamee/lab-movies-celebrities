@@ -1,0 +1,9 @@
+<!-- views/movies/movies.hbs -->
+
+<h2>List of Movies</h2>
+
+<ul>
+  {{#each movies}}
+    <li><a href="/movies/{{this._id}}">{{this.title}}</a></li>
+  {{/each}}
+</ul>
